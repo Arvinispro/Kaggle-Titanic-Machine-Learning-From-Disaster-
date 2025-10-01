@@ -5,14 +5,14 @@ This project predicts survival outcomes for passengers on the Titanic using the 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 - `data/` — Training and test datasets  
 - `scripts/` — R scripts for analysis, preprocessing, and modeling  
 - `output/` — Final CSV file with survival predictions  
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 1. **Exploratory Data Analysis (EDA)**
    - Correlation analysis with the target variable `Survived`
@@ -31,24 +31,27 @@ This project predicts survival outcomes for passengers on the Titanic using the 
 
 4. **Results**
    - Model achieved **61.08% accuracy**
-   - Predictions exported to `output/predictions.csv`
+   - Predictions exported to `output/final.csv`
 
 ---
 
-## 📊 Results & Insights
+## Results & Insights
 - Wealth class and gender had strong correlations with survival.
 - Linear regression provided insights but limited predictive power compared to classification models like logistic regression or tree-based models.
 - Future improvements could involve trying logistic regression, random forests, or gradient boosting.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Requirements
 - R (≥ 4.0.0)
-- Packages: `tidyverse`, `ggplot2`, `MASS`, `dplyr`
 
-### Run Instructions
-```R
-# Run preprocessing and modeling
-source("scripts/titanic_model.R")
+### File descriptions
+test.csv - unsupervised testing dataset where the actual survival was not given, they were expected to be predicted by the model
+train.csv - training dataset where we were given actual survival.
+Titanic_Model.R - the program we designed for analysis and modelling that operated the above tasks
+Final.csv - the final prediction to be submitted to test the accuracy.
+
+
+
